@@ -1,0 +1,76 @@
+<hmtl>
+  <head>
+    <title>Form</title>
+    <meta charset="utf8" ></meta>
+    <link rel="stylesheet" href="monstro.css">
+  </head>
+  <body id="corpo">
+    <form id="Post" method="POST" ACTION="http://terrivel.herokuapp.com/monster">
+       <h1>POST</h1>
+      <label>Número de pedras: </label>
+      <input  step="1.0" type="number"  placeholder="1" name="num_pedras" required><br>
+      <label>Tamanho das pedras: </label>
+      <input  step="0.5" type="number"  min="1" max="7" name="tam_pedras" placeholder="3" required><br>
+      <label> Nome do meu monstrinho lindo: </label>
+      <input type="text" pattern= "[A-Za-z]{4,50}" name="nome" required><br>
+      <label>Cor do céu 1:</label>
+      <input type = "color" name="corCeu1" required><br>
+      <label>Cor do céu 2:</label>
+      <input type = "color" name="corCeu2" required><br>
+      <label>Tipo de pedra: </label><br>
+      <label>
+      <input type="radio" name="tipo_pedras" value='marroada' checked>marroada 
+      </label>
+      <label>
+      <input type="radio" name="tipo_pedras" value='ametista'>ametista 
+      </label>
+      <label>
+      <input type="radio" name="tipo_pedras" value='topazio'>topazio 
+      </label>
+      <label>
+      <input type="radio" name="tipo_pedras" value='espinela'>espinela 
+      </label><br>
+      <label>Pedras Sortidas: </label><br>
+      <input type="radio" name="tipo_pedras_sortidas" value="sim" checked>Sim 
+      </label>
+      <label>
+      <input type="radio" name="tipo_pedras_sortidas" value="nao">Não 
+      </label><br>
+      <button>Submit</button>
+    </form>
+    <form id="Get" method="GET" ACTION="http://terrivel.herokuapp.com/monster">
+       <h1>GET</h1>
+      <label>Número de pedras: </label>
+      <input  step="1.0" type="number"  placeholder="1" name="num_pedras" required><br>
+      <label>Tamanho das pedras: </label>
+      <input  step="0.5" type="number"  min="1" max="7" name="tam_pedras" placeholder="3" required><br>
+      <label> Nome do meu monstrinho lindo: </label>
+      <input type="text" pattern= "[A-Za-z]{4,50}" name="nome" required><br>
+      <label>Cor do céu 1:</label>
+      <input type = "color" name="corCeu1" required><br>
+      <label>Cor do céu 2:</label>
+      <input type = "color" name="corCeu2" required><br>
+      <label>Tipo de pedra: </label><br>
+      <label>
+      <input type="radio" name="tipo_pedras" value="marroada" checked>marroada 
+      </label>
+      <label>
+      <input type="radio" name="tipo_pedras" value="ametista">ametista 
+      </label>
+      <label>
+      <input type="radio" name="tipo_pedras" value="topazio">topazio 
+      </label>
+      <label>
+      <input type="radio" name="tipo_pedras" value="espinela">espinela 
+      </label><br>
+      <label>Pedras Sortidas: </label><br>
+      <input type="radio" name="tipo_pedras_sortidas" value="sim" checked>Sim 
+      </label>
+      <label>
+      <input type="radio" name="tipo_pedras_sortidas" value="nao">Não 
+      </label><br>
+      <button>Submit</button>
+    </form>
+  </body>
+
+</hmtl>
